@@ -1,7 +1,7 @@
-import tkinter as tk
-from tkinter import messagebox
-import random
-import solver
+import tkinter as tk               # for the gui
+from tkinter import messagebox     # for error boxes
+import random                      # to shuffle the board
+import solver                      # where the math happens
 
 class PuzzleUI:
     def __init__(self,root):
