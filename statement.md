@@ -15,9 +15,9 @@ The main goal of this project is to develop a Python-based software application 
 
 # Technologies Used
 
-**Programming Language**: Python
-**GUI Framework**: tkinter
-**Algorithms**: A\* Search, Manhattan Distance Heuristic
+**Programming Language**: Python  
+**GUI Framework**: tkinter  
+**Algorithms**: A\* Search, Manhattan Distance Heuristic  
 
 # Why this problem?
 This problem was chosen because it is simple to understand but still demonstrates important AI concepts like state-space search, heuristics, and optimization.
