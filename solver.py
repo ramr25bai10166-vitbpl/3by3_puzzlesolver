@@ -1,4 +1,4 @@
-import heapq
+import heapq       # need this for A* sorting
 
 def md(state):
     # calc manhattan dist
