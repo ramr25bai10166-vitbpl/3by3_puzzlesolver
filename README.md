@@ -4,7 +4,7 @@ An artificial intelligence-based 3x3 Sliding Puzzle Solver. This project uses th
 
 ## Features
 - **Interactive UI**: Play the puzzle manually or shuffle it randomly.
-- **A* Algorithm**: Gaurantees finding the shortest path to solve the puzzle.
+- **A\* Algorithm**: Gaurantees finding the shortest path to solve the puzzle.
 - **Step-by-step Solution**: Visualizes each move required to reach the goal state.
 
 ## Prerequisites
