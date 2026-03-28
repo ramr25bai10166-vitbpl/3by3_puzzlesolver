@@ -5,6 +5,7 @@ import solver
 
 class PuzzleUI:
     def __init__(self,root):
+        # setup main window
         self.root=root
         self.root.title("3x3 Puzzle Solver")
         self.root.geometry("450x850")
@@ -82,7 +83,8 @@ class PuzzleUI:
         
         r1,c1=idx//3, idx%3
         r2,c2=emp_idx//3, emp_idx%3
-        
+
+        # swap tiles if they next to each other
         if abs(r1-r2)+abs(c1-c2)==1:
             self.curr[emp_idx], self.curr[idx]=self.curr[idx],self.curr[emp_idx]
             self.update_main()
@@ -110,7 +112,8 @@ class PuzzleUI:
     def shuffle(self):
         st=list(self.goal)
         prev=set([tuple(st)])
-        
+
+        # 50 random valid moves to shuffle
         for _ in range(50):
             nbrs=solver.get_nbrs(tuple(st))
             valid=[n for n in nbrs if tuple(n) not in prev]
@@ -140,7 +143,8 @@ class PuzzleUI:
         self.root.update()
         
         self.sol_path = solver.solve(tuple(self.curr))
-        
+
+        # check if it actually solved
         if self.sol_path:
             tot= len(self.sol_path)-1
             self.info_lbl.config(text=f"Min steps: {tot}.")
