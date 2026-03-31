@@ -31,7 +31,7 @@ The classic 8-puzzle (a 3x3 sliding tile puzzle) problem consists of a 3x3 grid 
 
 # Project Objective
 
-The main goal of this project is to develop a Python-based software application that solves the 8-puzzle problem using Artificial Intelligence. Specificly, the program implements the *A (A-star) search algorithm*\* employing the Manhattan Distance as a heuristic function to ensure an optimal solution.
+The main goal of this project is to develop a Python-based software application that solves the 8-puzzle problem using Artificial Intelligence. Specificly, the program implements the **A\* (A-star) search algorithm** employing the Manhattan Distance as a heuristic function to ensure an optimal solution.
 
 # Scope  
 
