@@ -8,7 +8,7 @@ Instead of just making random moves, this solver uses a search strategy (specifi
 The 8-puzzle (a 3x3 grid) is a classic benchmark in AI, consisting of eight numbered tiles and one empty slot. My goal was to move past "brute-force" guessing and create an intelligent agent that finds the **most efficient** sequence of moves to reach the goal state.
 
 ## Key Features
-* **Hands-on Interaction**: You can play the puzzle manually to test your own logic or use the shuffle feature to randomize the board[cite: 110].
+* **Hands-on Interaction**: You can play the puzzle manually to test your own logic or use the shuffle feature to randomize the board.
 * **The "Brain" (A\* Algorithm)**: I implemented the A* search algorithm, which uses the Manhattan Distance heuristic to guarantee the shortest path to a solution.
 * **Guided Solutions**: If you get stuck, the AI doesn’t just jump to the end—it visualizes each individual move so you can follow its logic step-by-step.
 
@@ -35,7 +35,7 @@ The 8-puzzle (a 3x3 grid) is a classic benchmark in AI, consisting of eight numb
 I chose this problem because it is a perfect bridge between theory and practice. It allowed me to take abstract concepts like "state-space search" and "heuristics" and turn them into something visual and interactive. This project has deepened my understanding of how AI can be used to solve optimization problems effectively.  
 
 ## Known Limitations & Future Goals  
-Currently, the solver is optimized for $3 \times 3$ grids, and very complex shuffles can sometimes cause the interface to pause while the AI "thinks"[cite: 114]. In the future, I plan to add:
+Currently, the solver is optimized for $3 \times 3$ grids, and very complex shuffles can sometimes cause the interface to pause while the AI "thinks". In the future, I plan to add:
 * Smooth sliding animations for the tiles.
 * Support for larger puzzles, such as $4 \times 4$ or $5 \times 5$ grids.
 * A comparison tool to see how A* performs against other algorithms like BFS or DFS.
