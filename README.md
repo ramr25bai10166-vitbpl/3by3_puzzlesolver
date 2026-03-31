@@ -1,49 +1,41 @@
 # AI Puzzle Solver
 
-An artificial intelligence-based 3x3 Sliding Puzzle Solver. This project uses the A* search algorithm (with the Manhattan Distance heuristic) to find the optimal sequence of moves to solve a shuffled puzzle. It features a graphical user interface built with Python's standard `tkinter` library.
+Welcome to my **AI Puzzle Solver** project! As a student exploring the intersection of Artificial Intelligence and user experience, I built this application to show how a computer can "think" through a classic 3x3 sliding puzzle. 
 
-# Problem Statement
+Instead of just making random moves, this solver uses a search strategy (specifically A* search algorithm) to find the shortest path from a mess of tiles to a perfect grid. 
 
-The classic 8-puzzle (a 3x3 sliding tile puzzle) problem consists of a 3x3 grid with 8 numbered square tiles and one blank space. Tiles can be moved into the blank space. The objective is to start from any reachable initial configuration and reach a specific goal configuration (typically tiles ordered 1 to 8 with the blank space at the bottom right) in the minimum number of moves.  
+## The Challenge  
+The 8-puzzle (a 3x3 grid) is a classic benchmark in AI, consisting of eight numbered tiles and one empty slot[cite: 97, 98]. [cite_start]With over 181,000 possible configurations, my goal was to move past "brute-force" guessing and create an intelligent agent that finds the **most efficient** sequence of moves to reach the goal state[cite: 93, 99].
 
-## Features
-- **Interactive UI**: Play the puzzle manually or shuffle it randomly.
-- **A\* Algorithm**: Gaurantees finding the shortest path to solve the puzzle.
-- **Step-by-step Solution**: Visualizes each move required to reach the goal state.
+## Key Features
+* [cite_start]**Hands-on Interaction**: You can play the puzzle manually to test your own logic or use the shuffle feature to randomize the board[cite: 110].
+* [cite_start]**The "Brain" (A* Algorithm)**: I implemented the A* search algorithm, which uses the **Manhattan Distance heuristic** to guarantee the shortest path to a solution[cite: 94, 102].
+* [cite_start]**Guided Solutions**: If you get stuck, the AI doesn’t just jump to the end—it visualizes each individual move so you can follow its logic step-by-step[cite: 95].
 
-## Prerequisites
-- Python 3.x
-- `tkinter` (usually included with standard Python installations)
+## Built With
+* **Python**: The core language used for all logic and search functions.
+* [cite_start]**Tkinter**: A standard Python library used to create a clean, responsive Graphical User Interface (GUI)[cite: 108, 110].
+* **A* Search & Heuristics**: The mathematical foundations that ensure the solver is both fast and optimal[cite: 104, 106].
 
-## How to Run
-1. Clone or download this project.
-2. Run the main script:
-   ```bash
-   python main.py
-   ```
-3. Use the **Shuffle** button to randomize the board, or click the tiles to move them manually.
-4. Click **Solve** to calculate the shortest path to the goal.
-5. Step through the solution using the **Show steps** and **Next** buttons.
+## How to Try It
+1.  **Get the files**: Download or clone this repository to your computer.
+2.  **Launch the app**: Open your terminal or command prompt and run:
+    ```bash
+    python main.py
+    ```
+3.  [cite_start]**Play & Shuffle**: Use the **Shuffle** button to scramble the tiles, or move them yourself by clicking on them[cite: 110].
+4.  [cite_start]**Let the AI take over**: Click **Solve** to let the A* algorithm calculate the path[cite: 110].
+5.  **Learn the steps**: Use the **Show steps** and **Next** buttons to watch the AI's "thought process" in action[cite: 110].
 
 ## Project Structure
-- `main.py`: Contains the graphical user interface (GUI) logc using `tkinter`.
-- `solver.py`: Contains the A* search algorithm and puzzle logic.  
+* **`main.py`**: This is the heart of the user experience. [cite_start]It handles the buttons, the grid display, and the interaction logic[cite: 110].
+* **`solver.py`**: This is the engine room. [cite_start]It contains the mathematical logic for the A* algorithm and the Manhattan Distance calculations[cite: 109].
 
-# Project Objective
+## Why I Built This
+I chose this problem because it is a perfect bridge between theory and practice[cite: 116]. It allowed me to take abstract concepts like "state-space search" and "heuristics" and turn them into something visual and interactive[cite: 118]. This project has deepened my understanding of how AI can be used to solve optimization problems effectively.
 
-The main goal of this project is to develop a Python-based software application that solves the 8-puzzle problem using Artificial Intelligence. Specificly, the program implements the **A\* (A-star) search algorithm** employing the Manhattan Distance as a heuristic function to ensure an optimal solution.
-
-# Scope  
-
-1. **Algorithmic Module**: A solver engine that computes the shortest path between a given state and the goal state.
-2. **Graphical User Interface (GUI)**: A user-friendly interface that allows users to manually interact with the puzzle, randomly shuffle the tiles, and request the solver to find the optimal path.
-3. **Visualization**: A visual representation of the step-by-step solution.  
-
-# Technologies Used
-
-**Programming Language**: Python  
-**GUI Framework**: tkinter  
-**Algorithms**: A\* Search, Manhattan Distance Heuristic  
-
-# Why this problem?
-This problem was chosen because it is simple to understand but still demonstrates important AI concepts like state-space search, heuristics, and optimization.
+## Known Limitations & Future Goals
+Currently, the solver is optimized for $3 \times 3$ grids, and very complex shuffles can sometimes cause the interface to pause while the AI "thinks"[cite: 114]. In the future, I plan to add:
+* [cite_start]Smooth sliding animations for the tiles[cite: 120].
+* [cite_start]Support for larger puzzles, such as $4 \times 4$ or $5 \times 5$ grids[cite: 120].
+* A comparison tool to see how A* performs against other algorithms like BFS or DFS[cite: 120].
